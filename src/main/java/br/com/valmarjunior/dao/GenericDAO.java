@@ -3,6 +3,7 @@ package main.java.br.com.valmarjunior.dao;
 import java.io.Serializable;
 import java.util.List;
 
+
 public interface GenericDAO<T, ID extends Serializable> {
 	
 	public T save(T entity);
