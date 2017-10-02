@@ -1,0 +1,1 @@
+select enum_range(enum_first(null::status),null::status);
