@@ -19,17 +19,17 @@ public class Aluno implements Serializable {
 	
 	private String curso;
 	
-	private int numero;
+	private int matricula;
 	
-	private int integer;
+	private int semestre;
 	
 	private Status status;
 	
-	public Aluno(String nome, String curso, int numero, int integer, Status status) {
+	public Aluno(String nome, String curso, int matricula, int semestre, Status status) {
 		this.nome = nome;
 		this.curso = curso;
-		this.numero = numero;
-		this.integer = integer;
+		this.matricula = matricula;
+		this.semestre = semestre;
 		this.status = status;
 	}
 	
@@ -60,25 +60,28 @@ public class Aluno implements Serializable {
 		this.curso = curso;
 	}
 	
-	public int getNumero() {
-		return this.numero;
+	public int getMatricula() {
+		return this.matricula;
 	}
 	
-	public void setNumero(int numero) {
-		this.numero = numero;
+	public void setMatricula(int numero) {
+		this.matricula = numero;
 	}
 	
-	public int getInteger() {
-		return this.integer;
+	public int getSemestre() {
+		return this.semestre;
 	}
 	
-	public void setInteger(int integer) {
-		this.integer = integer;
+	public void setSemestre(int integer) {
+		this.semestre = integer;
 	}
 	
 	@Enumerated(EnumType.STRING)
 	public Status getStatus() {
 		return this.status;
 	}
+	
+	
+	
 	
 }
